@@ -12,12 +12,13 @@ import java.util.Scanner;
  *  Copyright 2021 Dustin Battles
  */
 
-public class solution09 {
+public class Solution09 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         String stringThatChecksForInts;
 
-        int loop = 0, squareFootage = 0;
+        int loop = 0;
+        int squareFootage = 0;
 
         while(loop == 0)
         {

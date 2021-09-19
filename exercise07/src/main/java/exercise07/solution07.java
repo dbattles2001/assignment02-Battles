@@ -9,21 +9,27 @@ import java.util.Scanner;
 
 /*
     In this one we're gonna ask the user for their inputs, testing each time
-    using string parsing whether or not what theyre giving us is an INT.
+    using string parsing whether what they're giving us is an INT.
 
-    Afterwords we will print the mathmatics.
+    Afterwords we will print the mathematics.
 
     For the one where it switches between feet and meters, i'll change it to have it ask for your selection first,
     and then the part where it prints the conversion will be flipped according to that value
     which will be like "meter = 1 or 0"
  */
 
-public class solution07 {
+public class Solution07 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
-        int loop = 1, length = 0, width = 0, test = 0, choice;
-        double constant;
+        int length = 0;
+        int width = 0;
+        int test = 0;
+        int choice;
+
+        double constantMeters = 0.09290304;
+        double constantFeet = 3.28084;
+
         String[] types = new String[] {"length", "width"};
 
         System.out.println("What would you like to measure in? 0 = feet, 1 = meters");
@@ -56,14 +62,14 @@ public class solution07 {
         int sqr = length * width;
 
         if(choice == 0){
-            System.out.printf("Your square feet is %d\n", sqr);
-            double sqrTwo = sqr * 0.09290304;
+            System.out.printf("Your square feet is %d%n", sqr);
+            double sqrTwo = sqr * constantMeters;
             System.out.printf("Your square meters is %f", sqrTwo);
         }
         else{
 
-            System.out.printf("Your square meters is %d\n", sqr);
-            double sqrTwo = sqr * 3.28084;
+            System.out.printf("Your square meters is %d%n", sqr);
+            double sqrTwo = sqr * constantFeet;
             System.out.printf("Your square feet is %f", sqrTwo);
         }
     }

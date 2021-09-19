@@ -1,7 +1,6 @@
 package exercise12;
 
 import java.util.Scanner;
-import java.math.RoundingMode;
 
 /*
  *  UCF COP3330 Fall 2021 Assignment 2 Solution 12
@@ -14,20 +13,23 @@ import java.math.RoundingMode;
     listed in the challenges.
  */
 
-public class solution12 {
+public class Solution12 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
         String in = "";
 
-        int principal = 0, interestRate = 0, years = 0, afterYears;
+        int principal = 0;
+        int interestRate = 0;
+        int years = 0;
+
         String[] names = {"principal", "interest rate", "years"};
 
         for(int i = 0; i<3; i++){
             int loop = 0;
             while(loop == 0)
             {
-                System.out.printf("\nWhat's the %s?\n", names[i]);
+                System.out.printf("%nWhat's the %s?%n", names[i]);
                 in = input.next();
 
                 if(numberTester(in))
@@ -41,7 +43,7 @@ public class solution12 {
                         break;
                         case 2: years = Integer.parseInt(in);
                         break;
-                        default: System.out.printf("Whoops!");
+                        default: System.out.println("Whoops!");
                         break;
                     }
                     loop = 1;

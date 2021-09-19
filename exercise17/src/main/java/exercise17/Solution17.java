@@ -15,6 +15,7 @@ import java.util.Scanner;
 public class Solution17 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
+
         double weight;
         double oz;
         double hoursSinceLastDrink;

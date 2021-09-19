@@ -23,4 +23,4 @@ run{
     standardInput = System.in
 }
 
-mainClassName = "exercise07.solution07"
+mainClassName = "exercise07.Solution07"

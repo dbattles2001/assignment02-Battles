@@ -17,7 +17,12 @@ import java.util.Scanner;
 public class Solution14 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        double orderAmount, tax = 1.055, total, subtotal;
+
+        double orderAmount;
+        double tax = 1.055;
+        double total;
+        double subtotal;
+
         String state;
 
         System.out.println("What is the order amount?");

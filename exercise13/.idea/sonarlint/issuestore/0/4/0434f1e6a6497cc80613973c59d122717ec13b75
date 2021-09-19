@@ -1,19 +1,8 @@
 
-F
-java:S1659"+Declare "compoundTimes" on a separate line.(‘ºë¯ùÿÿÿÿ
-9
-java:S1659"#Declare "years" on a separate line.(ˆýäû
-l
-java:S3457"Q%n should be used in place of \n to produce the platform-specific line separator.(«úÔÚûÿÿÿÿ
-S	java:S106"9Replace this use of System.out or System.err by a logger.(«úÔÚûÿÿÿÿ
-N	java:S106#"9Replace this use of System.out or System.err by a logger.(Ž³ï§
-@
-java:S3457."%String contains no format specifiers.(ó™–ûúÿÿÿÿ
-S	java:S106."9Replace this use of System.out or System.err by a logger.(ó™–ûúÿÿÿÿ
-S	java:S1063"9Replace this use of System.out or System.err by a logger.(ØÕ»«þÿÿÿÿ
-M	java:S106;"9Replace this use of System.out or System.err by a logger.(–íÊ
-I
-java:S1128"3Remove this unused import 'java.math.RoundingMode'.(¿ì†‹
+S	java:S106 "9Replace this use of System.out or System.err by a logger.(§±èÖùÿÿÿÿ
+N	java:S106%"9Replace this use of System.out or System.err by a logger.(Ž³ï§
+N	java:S1060"9Replace this use of System.out or System.err by a logger.(Û”£’
+S	java:S1065"9Replace this use of System.out or System.err by a logger.(ØÕ»«þÿÿÿÿ
+N	java:S106<"9Replace this use of System.out or System.err by a logger.(·Üíì
+T	java:S106B"9Replace this use of System.out or System.err by a logger.(–íÊ8Óƒ¢ó¿/
 t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ì÷Áÿøÿÿÿÿ
-Y
-java:S35188"CMake sure "compoundTimes" can't be zero before doing this division.(Öðç‰

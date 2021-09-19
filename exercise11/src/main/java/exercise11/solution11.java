@@ -12,13 +12,14 @@ package exercise11;
  */
 
 import java.util.Scanner;
-import java.math.RoundingMode;
 
-public class solution11 {
+public class Solution11 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
-        float amountOfEuros, conversionRate, amountInDollars;
+        float amountOfEuros;
+        float conversionRate;
+        float amountInDollars;
 
         System.out.println("How many Euros would you like to exchange?");
         amountOfEuros = input.nextFloat();

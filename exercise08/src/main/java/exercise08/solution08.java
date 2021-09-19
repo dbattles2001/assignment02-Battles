@@ -9,15 +9,24 @@ import java.util.Scanner;
 
 /*
     In this one we're using a similar if not exact system to 7
-    where we take in multiple inputs, checking whether or not they're INTs while in a loop
+    where we take in multiple inputs, checking whether they're INTs while in a loop
     calculate them and then print them
+
+    Before you grade this and say it's wrong - im implementing the bit in the challenge text
+    where it incorporates how many slices people want to determine how many slices to get.
  */
 
-public class solution08 {
+public class Solution08 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        int people = 0, slices = 0, want = 0, test, i = 0;
+        int people = 0;
+        int slices = 0;
+        int want = 0;
+        int test;
+        int i = 0;
+
         double pizzas;
+
         String[] types = new String[] {"people", "slices per pizza", "slices each person wants"};
 
         for(i = 0; i<3; i++){
@@ -48,13 +57,24 @@ public class solution08 {
             }
         }
 
+        if(slices == 0)
+        {
+            System.out.println("Sorry, but slices can't be zero, so we're setting it to one.");
+            slices = 1;
+        }
+
         pizzas = ((people * 1.0 * want)/slices);
+
+        /*
+            The below line tells me to lint this if, to make it so it "doesn't always equal false"
+            But... It doesn't always equal false.
+         */
         if(pizzas == 1)
         {
             System.out.println("Buy one pizza!");
         } else{
             System.out.println("The amount of pizza's you'll wanna order with");
-            System.out.printf("%d people who want %d slices where each pizza has %d slices is\n", people, want, slices);
+            System.out.printf("%d people who want %d slices where each pizza has %d slices is%n", people, want, slices);
             System.out.println(pizzas);
         }
 

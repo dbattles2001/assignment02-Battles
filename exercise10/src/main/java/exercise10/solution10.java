@@ -13,7 +13,7 @@ import java.util.Scanner;
     and calculate it.
  */
 
-public class solution10 {
+public class Solution10 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
@@ -21,7 +21,8 @@ public class solution10 {
 
         System.out.println("How many items would you like?");
         int numItems = input.nextInt();
-        int loop = 0, loopTwo = 0;
+        int loop = 0;
+        int loopTwo = 0;
         int[] itemPriceArray = new int[numItems];
         int[] itemQuantityArray = new int[numItems];
 
@@ -60,18 +61,19 @@ public class solution10 {
             }
         }
 
-        int  subtotalHolder, subtotal = 0;
+        int  subtotalHolder;
+        int subtotal = 0;
 
         for(int i = 0; i< numItems; i++){
             subtotalHolder = itemQuantityArray[i] * itemPriceArray[i];
             subtotal += subtotalHolder;
         }
 
-        System.out.printf("Your subtotal is: %d\n", subtotal);
+        System.out.printf("Your subtotal is: %d%n", subtotal);
 
         double taxes = (subtotal * 1.055) - subtotal;
 
-        System.out.printf("Tax: %f\n", taxes);
+        System.out.printf("Tax: %f%n", taxes);
 
         double total = subtotal * 1.055;
 

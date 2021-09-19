@@ -22,4 +22,4 @@ run{
     standardInput = System.in
 }
 
-mainClassName = "exercise12.solution12"
+mainClassName = "exercise12.Solution12"

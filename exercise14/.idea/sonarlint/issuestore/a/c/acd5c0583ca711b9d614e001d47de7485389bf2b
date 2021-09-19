@@ -1,10 +1,8 @@
 
 Q	java:S125"<This block of commented-out lines of code should be removed.(™å¸Á
-V
-java:S1659"@Declare "tax" and all following declarations on a separate line.(ªö£Ö
-M	java:S106"9Replace this use of System.out or System.err by a logger.(š¼ŠX
-N	java:S106"9Replace this use of System.out or System.err by a logger.(Ï©…Ÿ
-N	java:S106!"9Replace this use of System.out or System.err by a logger.(ƒş§¯
-S	java:S106%"9Replace this use of System.out or System.err by a logger.(Æ¨¢Šûÿÿÿÿ
-S	java:S106("9Replace this use of System.out or System.err by a logger.(ä²ÈÀüÿÿÿÿ
+M	java:S106"9Replace this use of System.out or System.err by a logger.(š¼ŠX
+N	java:S106"9Replace this use of System.out or System.err by a logger.(Ï©…Ÿ
+N	java:S106&"9Replace this use of System.out or System.err by a logger.(ƒş§¯
+S	java:S106*"9Replace this use of System.out or System.err by a logger.(Æ¨¢Šûÿÿÿÿ
+S	java:S106-"9Replace this use of System.out or System.err by a logger.(ä²ÈÀüÿÿÿÿ
 t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(È¼ˆâûÿÿÿÿ

@@ -18,6 +18,7 @@ import java.util.Scanner;
 public class Solution15 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
+
         String username;
         String password;
         String[] passwords = {"one", "two"};
